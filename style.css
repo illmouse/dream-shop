@@ -15,9 +15,9 @@ body {
    background-color: #f1f1f1;
 }
 #header {
-   padding: 10px;
-   border-bottom: 1px solid lightgrey;
-   background-color: #fff;
+  height: 70px;
+  border-bottom: 1px solid lightgrey;
+  background-color: #fff;
 }
 #body {
    padding: 10px;
@@ -40,6 +40,7 @@ body {
 /* Primary positioning on the page */
 
 .header-layout1 {
+  height: 50px;
   margin: 0 auto;
 }
 .body-center {
@@ -66,14 +67,21 @@ body {
     color: black;
 }
 .body-layout2 {
-  margin: 0 0 5px 165px;
+  margin: 0 0 0 165px;
   display: flex;
   min-height: 200px;
   max-width: 830px;
   min-width: 100px;
-  padding: 0 15px;
+  padding: 15px;
   border: 1px solid lightgray;
   background-color: #fff;
+}
+.block {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  background-color: #f1f1f1;
+  margin-right: 5px;
 }
 .footer-layout1 {
   margin: 10px auto 0 auto;
@@ -98,5 +106,8 @@ body {
     }
     .body-menu a {
       margin-right: 25px;
+    }
+    .body-menu .last {
+      margin-right: 0;
     }
 }
