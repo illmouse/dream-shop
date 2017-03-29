@@ -66,8 +66,9 @@ body {
     text-decoration: none;
     color: black;
 }
-.body-menu li:hover {
-  font-style: bold;
+.body-menu li:hover a {
+  font-weight: bold;
+  margin: 0;
 }
 .body-layout2 {
   margin: 0 0 0 165px;
