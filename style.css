@@ -108,12 +108,11 @@ body {
 }
 .body-layout2 .block-body {
   max-height: 150px;
-/*  height: 150px;*/
   padding: 5px;
   font-size: 16px;
   overflow: hidden;
-  transition: max-height 0.5s;
-  -webkit-transition: max-height 0.5s;
+  transition: max-height 0.7s;
+  -webkit-transition: max-height 0.7s;
 }
 .body-layout2 .block-body:hover {
   max-height: 500px;
