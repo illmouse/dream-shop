@@ -56,6 +56,14 @@ body {
 }
 .body-menu {
   list-style: none;
+  margin-left: -20px;
+}
+.body-menu li {
+    margin-bottom: 10px;
+}
+.body-menu a {
+    text-decoration: none;
+    color: black;
 }
 .body-layout2 {
   margin: 0 0 5px 165px;
@@ -63,7 +71,7 @@ body {
   min-height: 200px;
   max-width: 830px;
   min-width: 100px;
-  padding: 5px;
+  padding: 0 15px;
   border: 1px solid lightgray;
   background-color: #fff;
 }
@@ -71,20 +79,24 @@ body {
   margin: 10px auto 0 auto;
 }
 @media screen and (max-width: 540px) {
-    .body-menu {
-
-      margin: 15px 0 0 auto;
-    }
-    .body-menu li {
-      display: inline;
-    }
     .body-layout1 {
       float: none;
-      height: 50px;
+      height: 30px;
       width: 100%;
     }
     .body-layout2 {
       width: 100%;
       margin: 5px auto;
+    }
+    .body-menu {
+      padding: 0;
+      text-align: center;
+      margin-top: 5px;
+    }
+    .body-menu li {
+      display: inline;
+    }
+    .body-menu a {
+      margin-right: 25px;
     }
 }
