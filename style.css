@@ -68,10 +68,11 @@ html {
 .body-menu a {
     text-decoration: none;
     color: black;
+    transition: color 0.3s;
+    -webkit-transition: color 0.3s;
 }
-.body-menu li:hover a {
-  font-weight: bold;
-  margin: 0;
+.body-menu a:hover {
+  color: #FF8100;
 }
 .body-layout2 {
   margin: 0 0 0 165px;
