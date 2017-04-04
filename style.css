@@ -139,6 +139,9 @@ h1, h2, h3, h4, p {
 .body-layout2 .block-menu a:hover {
   color: #FF6F00;
 }
+.body-layout2 .block-menu .current {
+  border-bottom: 1px solid black;
+}
 .body-layout2 .block:hover {
   -webkit-box-shadow: 1px 1px 4px 2px rgba(164,181,161,1);
   -moz-box-shadow: 1px 1px 4px 2px rgba(164,181,161,1);
