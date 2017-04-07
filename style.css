@@ -142,7 +142,7 @@ p {
 }
 
 .body-layout2 ul {
-    d-style: none;
+    list-style: none;
     margin: 0;
     padding: 0;
 }
