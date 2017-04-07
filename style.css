@@ -174,9 +174,14 @@ p {
 }
 
 .body-layout2 .block:hover {
-    -webkit-box-shadow: 1px 1px 4px 2px rgba(164, 181, 161, 1);
-    -moz-box-shadow: 1px 1px 4px 2px rgba(164, 181, 161, 1);
-    box-shadow: 1px 1px 4px 2px rgba(164, 181, 161, 1);
+    content: '';
+    position: relative;
+    background: rgba(0, 0, 0, .5);
+    transition: background .5s ease;
+/*    z-index: 100;   */
+}
+.body-layout2 .block-body:hover {
+
 }
 
 .body-layout2 .block:nth-child(4n) {
