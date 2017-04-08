@@ -4,7 +4,7 @@
 <head>
     <title>Dream shop</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contacts.css">
 </head>
 
 <body>
@@ -24,13 +24,52 @@
                     </ul>
                 </div>
                 <div class="layout-body-column2">
-                    <h3>My Google Maps Demo</h3>
-                    <div id="map"></div>
+                    <div id="feedback">
+                        <h4>Contat us:</h4>
+                        <br>
+                        <form action="feedback">
+                            <label>Name:
+                                <input type="name" placeholder="Name" size="30">
+                            </label>
+                            <br>
+                            <br>
+                            <label>Email:
+                                <input type="email" placeholder="Email" size="30">
+                            </label>
+                            <br>
+                            <br>
+                            <label>Topic:
+                                <input type="topic" placeholder="Topic" size="30">
+                            </label>
+                            <br>
+                            <br>
+                            <textarea name="" id="" cols="38" rows="10"></textarea>
+                            <br>
+                            <input type="submit">
+                        </form>
+                    </div>
+                    <div id="contacts">
+                    <table>
+                        <tr><div class="item">
+                            <div class="icon icon-phone"></div>
+                            +1 559-666-5555<br>
+                        </div></tr>
+                       <tr> <div class="item">
+                            <div class="icon icon-address"></div>
+                            13883 Lassen Ave, Helm, CA 93627
+                        </div></tr>
+                        <tr><div class="item">
+                            <div class="icon icon-email"></div>
+                            dreamshop@dreamshop.company
+                        </div></tr>
+                    </table>
+                        <div id="map"></div>
+                    </div>
                     <script>
                     function initMap() {
                         var uluru = {
-                            lat: 55.750577,
-                            lng: 37.616647
+                            lat: 36.533913,
+                            lng: -120.097913
                         };
                         var map = new google.maps.Map(document.getElementById('map'), {
                             zoom: 17,
@@ -47,12 +86,11 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div id="footer">
-        <div class="clearfix layout-footer">
-            <p>&#169; 2017 Dream Corp.</p>
+        <div id="footer">
+            <div class="clearfix layout-footer">
+                <p>&#169; 2017 Dream Corp.</p>
+            </div>
         </div>
-    </div>
     </div>
 </body>
 
