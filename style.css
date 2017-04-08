@@ -216,6 +216,13 @@ p {
     margin: 0 auto;
 }
 
+/*CONTACTS*/
+
+#map {
+    width: 300px;
+    height: 200px;
+    background-color: grey;
+}
 
 /*RESPONSIVE DESIGN*/
 
