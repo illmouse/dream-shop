@@ -17,24 +17,24 @@ html {
     overflow-y: scroll;
 }
 
-#container {
+.container {
     min-height: 100%;
     position: relative;
     background-color: #f1f1f1;
 }
 
-#header {
+.header {
     height: 70px;
     border-bottom: 1px solid lightgrey;
     background-color: #fff;
 }
 
-#body {
+.body {
     padding: 10px;
     padding-bottom: 70px;
 }
 
-#footer {
+.footer {
     position: absolute;
     bottom: 0;
     width: 100%;
