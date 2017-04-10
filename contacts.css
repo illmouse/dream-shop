@@ -122,18 +122,18 @@ p {
 
 /*CONTACTS*/
 
-#feedback,
-#contacts {
+.feedback,
+.contacts {
     display: inline-table;
 }
 
-#feedback {
+.feedback {
     padding: 5px;
     width: 500px;
     height: 300px;
 }
 
-#contacts ul {
+.contacts ul {
     list-style: none;
     text-align: right;
 }
@@ -163,10 +163,47 @@ p {
     background-position: -180px 0;
 }
 
-#map {
+.map {
     width: 300px;
     height: 200px;
     background-color: grey;
+}
+
+input[type=text] {
+    width: 400px;
+    padding: 5px 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: padding .3s;
+}
+
+input[type=text]:focus {
+    background: #f1ffaf;
+    padding-left: 20px;
+}
+
+textarea {
+    width: 400px;
+    max-width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 400px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: #fff;
+    transition: letter-spacing .5s;
+}
+
+input[type=submit]:hover {
+    background: #f1ffaf;
+    letter-spacing: 5px;
 }
 
 
