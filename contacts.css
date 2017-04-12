@@ -166,11 +166,13 @@ p {
     width: 300px;
     height: 200px;
     background-color: grey;
-    margin-top: 70px;
+    margin-top: 90px;
 }
 
-input[type=text] {
+input[type=text],
+input[type=email] {
     width: 400px;
+    min-width: 100px;
     padding: 5px 10px;
     margin: 8px 0;
     border: 1px solid #ccc;
@@ -179,7 +181,8 @@ input[type=text] {
     transition: padding .3s;
 }
 
-input[type=text]:focus {
+input[type=text]:focus,
+input[type=email]:focus {
     background: #f1ffaf;
     padding-left: 20px;
 }
@@ -198,12 +201,11 @@ input[type=submit] {
     border: 1px solid #ccc;
     border-radius: 4px;
     background: #fff;
-    transition: all .5s;
+    transition: background .5s;
 }
 
 input[type=submit]:hover {
     background: #f1ffaf;
-    letter-spacing: 5px;
 }
 
 
@@ -220,6 +222,7 @@ input[type=submit]:hover {
 @media screen and (max-width: 1036px) {
     .layout-body-column2 {
         width: 630px;
+        padding: 0 auto;
     }
 }
 
