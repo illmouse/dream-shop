@@ -218,12 +218,12 @@ p {
 
 /*CONTACTS*/
 
-#map {
+.map {
     width: 300px;
     height: 200px;
     background-color: grey;
 }
-#contacts {
+.contacts {
 
     display: inline-block;
     padding: 5px;
