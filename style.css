@@ -322,6 +322,7 @@ input[type=submit]:hover {
     float: left;
     margin: 0 10px 10px 0;
     border: 2px solid rgba(255, 0, 0, 0.51);
+    margin-top: 8px;
 }
 
 .description-block .long-desc {
