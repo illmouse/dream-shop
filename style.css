@@ -218,15 +218,111 @@ p {
 
 /*CONTACTS*/
 
+.feedback,
+.contacts {
+    display: inline-block;
+}
+
+.feedback {
+    padding: 5px;
+    width: 500px;
+}
+
+.contacts ul {
+    list-style: none;
+    text-align: right;
+}
+
+.item {
+    margin-bottom: 10px;
+    line-height: 20px;
+}
+
+.icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 30px;
+    height: 30px;
+    background: url(img/contacts.png) no-repeat 0 0;
+}
+
+.icon-phone {
+    background-position: -60px 0;
+}
+
+.icon-address {
+    background-position: -150px 0;
+}
+
+.icon-email {
+    background-position: -180px 0;
+}
+
 .map {
     width: 300px;
     height: 200px;
     background-color: grey;
+    margin-top: 90px;
 }
-.contacts {
 
-    display: inline-block;
-    padding: 5px;
+input[type=text],
+input[type=email] {
+    width: 400px;
+    min-width: 100px;
+    padding: 5px 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: padding .3s;
+}
+
+input[type=text]:focus,
+input[type=email]:focus {
+    background: #f1ffaf;
+    padding-left: 20px;
+}
+
+textarea {
+    width: 400px;
+    max-width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 400px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: #fff;
+    transition: background .5s;
+}
+
+input[type=submit]:hover {
+    background: #f1ffaf;
+}
+
+/*DESCRIPTION BLOCK*/
+
+.description-block {
+    margin: 10px;
+}
+
+.description-block img {
+    float: left;
+    margin: 0 10px 10px 0;
+}
+
+.description-block .long-desc {
+    clear: both;
+}
+.title {
+    display: inline;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
 }
 
 /*RESPONSIVE DESIGN*/
