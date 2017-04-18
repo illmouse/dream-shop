@@ -79,6 +79,13 @@ p {
     color: black;
 }
 
+.layout-header a::before {
+    content: url(img/logo.png);
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
 .layout-body-column1 {
     float: left;
     width: 160px;
