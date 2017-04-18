@@ -155,7 +155,7 @@ p {
     padding: 0;
 }
 
-.layout-body-column2 img {
+.layout-body-column2 .market-block img {
     width: 190px;
     height: 140px;
 }
@@ -326,14 +326,16 @@ input[type=submit]:hover {
     margin: 10px;
 }
 
-.description-block img {
+.description-block img[src*="n1"] {
     float: left;
     margin: 0 10px 10px 0;
     border: 2px solid rgba(255, 0, 0, 0.51);
     margin-top: 8px;
+    width: 190px;
+    height: 140px;
 }
 
-.description-block img:hover {
+.description-block img[src*="n1"]:hover {
     border: 2px solid transparent;
 }
 
@@ -351,12 +353,8 @@ input[type=submit]:hover {
 }
 
 
-ul.desc-list {
-    list-style-image: url(../img/li.jpg);
-    padding-left: 220px;
-}
 
-.desc-list span {
+.specifications td:nth-child(2n) {
     text-transform: uppercase;
     font-weight: bold;
     font-size: 11px;
