@@ -70,7 +70,7 @@ p {
 /*layout-body-comlumn1*/
 
 .layout-header {
-    padding-top: 15px;
+    padding-top: 10px;
     margin: 0 auto;
 }
 
@@ -79,11 +79,8 @@ p {
     color: black;
 }
 
-.layout-header a::before {
-    content: url(img/logo.png);
-    position: absolute;
-    top: 10px;
-    left: 10px;
+.layout-header img {
+    border-radius: 80px;
 }
 
 .layout-body-column1 {
@@ -170,6 +167,7 @@ p {
     text-align: center;
     background-color: #f1ffaf;
     padding: 5px 0;
+    border-radius: 10px;
 }
 
 .layout-body-column2 .market-block-menu div {
@@ -333,6 +331,10 @@ input[type=submit]:hover {
     margin: 0 10px 10px 0;
     border: 2px solid rgba(255, 0, 0, 0.51);
     margin-top: 8px;
+}
+
+.description-block img:hover {
+    border: 2px solid transparent;
 }
 
 .description-block .long-desc {
