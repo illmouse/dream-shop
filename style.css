@@ -282,6 +282,8 @@ input[type=email] {
     border-radius: 4px;
     box-sizing: border-box;
     transition: padding .3s;
+    text-transform: capitalize;
+    outline: none;
 }
 
 input[type=text]:focus,
@@ -296,6 +298,7 @@ textarea {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
+    outline: none;
 }
 
 input[type=submit] {
