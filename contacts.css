@@ -1,0 +1,258 @@
+/* Primary positioning on the page */
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+html {
+    overflow-y: scroll;
+}
+
+.container {
+    min-height: 100%;
+    position: relative;
+    background-color: #f1f1f1;
+}
+
+.header {
+    height: 70px;
+    border-bottom: 1px solid lightgrey;
+    background-color: #fff;
+}
+
+.body {
+    padding: 10px;
+    padding-bottom: 70px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    background: #fff;
+    border-top: 1px solid lightgrey;
+}
+
+.clearfix {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/*layout-center*/
+
+h1,
+h2,
+h3,
+h4,
+p {
+    margin: 0;
+}
+
+.layout-center {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto 10px auto;
+}
+
+
+/*layout-body-comlumn1*/
+
+.layout-header {
+    padding-top: 15px;
+    margin: 0 auto;
+}
+
+.layout-header a {
+    text-decoration: none;
+    color: black;
+}
+
+.layout-body-column1 {
+    float: left;
+    width: 160px;
+    height: 200px;
+    border: 1px solid lightgray;
+    background-color: #fff;
+}
+
+.layout-body-column1 .menu {
+    list-style: none;
+    margin-left: -20px;
+}
+
+.layout-body-column1 .menu li {
+    margin-bottom: 10px;
+}
+
+.layout-body-column1 .menu a {
+    text-decoration: none;
+    color: black;
+    transition: color .3s;
+    -webkit-transition: color .3s;
+}
+
+.layout-body-column1 .menu a:hover {
+    color: #FF8100;
+}
+
+
+/*layout-body-column2*/
+
+.layout-body-column2 {
+    margin: 0 0 0 165px;
+    min-height: 200px;
+    max-width: 870px;
+    padding: 10px;
+    border: 1px solid lightgray;
+    background-color: #fff;
+}
+
+
+/*CONTACTS*/
+
+.feedback,
+.contacts {
+    display: inline-block;
+}
+
+.feedback {
+    padding: 5px;
+    width: 500px;
+}
+
+.contacts ul {
+    list-style: none;
+    text-align: right;
+}
+
+.item {
+    margin-bottom: 10px;
+    line-height: 20px;
+}
+
+.icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 30px;
+    height: 30px;
+    background: url(img/contacts.png) no-repeat 0 0;
+}
+
+.icon-phone {
+    background-position: -60px 0;
+}
+
+.icon-address {
+    background-position: -150px 0;
+}
+
+.icon-email {
+    background-position: -180px 0;
+}
+
+.map {
+    width: 300px;
+    height: 200px;
+    background-color: grey;
+    margin-top: 90px;
+}
+
+input {
+    text-transform: capitalize;
+}
+
+input[type=text],
+input[type=email] {
+    width: 400px;
+    min-width: 100px;
+    padding: 5px 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: padding .3s;
+}
+
+input[type=text]:focus,
+input[type=email]:focus {
+    background: #f1ffaf;
+    padding-left: 20px;
+}
+
+textarea {
+    width: 400px;
+    max-width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 400px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: #fff;
+    transition: background .5s;
+}
+
+input[type=submit]:hover {
+    background: #f1ffaf;
+}
+
+
+/*FOOTER*/
+
+.layout-footer {
+    padding-top: 25px;
+    margin: 0 auto;
+}
+
+
+/*RESPONSIVE DESIGN*/
+
+@media screen and (max-width: 1036px) {
+    .layout-body-column2 {
+        width: 630px;
+        padding: 0 auto;
+    }
+}
+
+@media screen and (max-width: 815px) {
+    .layout-body-column1 {
+        width: 426px;
+        float: none;
+        height: 50px;
+        margin: 0 auto;
+    }
+    .layout-body-column2 {
+        width: 426px;
+        margin: 5px auto;
+    }
+    .menu {
+        padding: 0;
+        text-align: center;
+        margin-top: 15px;
+    }
+    .menu li {
+        display: inline-block;
+    }
+    .menu a {
+        margin-right: 25px;
+    }
+    .menu .last {
+        margin-right: 0;
+    }
+}
