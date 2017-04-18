@@ -343,22 +343,29 @@ input[type=submit]:hover {
     clear: both;
 }
 
+.description-block .short-desc {
+    margin-bottom: 10px;
+}
+
 .title {
     display: inline;
     text-transform: uppercase;
     font-weight: bold;
     font-size: 14px;
-    padding-bottom: 10px;
     line-height: 30px;
 }
 
-
+.description-block p:first-letter {
+    font-family: Georgia, sans-serif;
+    font-size: 20px;
+}
 
 .specifications td:nth-child(2n) {
     text-transform: uppercase;
     font-weight: bold;
     font-size: 11px;
 }
+
 
 /*RESPONSIVE DESIGN*/
 
