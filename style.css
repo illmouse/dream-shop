@@ -115,6 +115,8 @@ p {
 /*layout-body-column2*/
 
 .layout-body-column2 {
+    display: flex;
+    flex-flow: row wrap;
     margin: 0 0 0 165px;
     min-height: 200px;
     max-width: 870px;
@@ -124,8 +126,8 @@ p {
 }
 
 .layout-body-column2 .market-block {
-    position: relative;
-    display: inline-table;
+/*    position: relative;
+    display: inline-table;*/
     width: 200px;
     height: 200px;
     background-color: #f1f1f1;
