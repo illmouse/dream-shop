@@ -26,7 +26,7 @@ html {
 .header {
     height: 70px;
     border-bottom: 1px solid lightgrey;
-    background-color: #fff;
+    background: #fff;
 }
 
 .body {
@@ -70,8 +70,8 @@ p {
 /*layout-body-comlumn1*/
 
 .layout-header {
-    padding-top: 10px;
-    margin: 0 auto;
+    padding-top: 5px;
+    margin-left: 10px;
 }
 
 .layout-header a {
@@ -80,7 +80,16 @@ p {
 }
 
 .layout-header img {
-    border-radius: 80px;
+    border-radius: 50px;
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+}
+
+.layout-header h1 {
+    display: inline-block;
+    line-height: 60px;
+    vertical-align: top;
 }
 
 .layout-body-column1 {
@@ -116,8 +125,9 @@ p {
 
 .layout-body-column2 {
     display: flex;
+    flex: 0 0;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 0 0 0 165px;
     min-height: 200px;
     max-width: 870px;
@@ -248,6 +258,9 @@ p {
     width: 500px;
 }
 
+.contacts {
+    margin-top: 70px;
+}
 .contacts ul {
     list-style: none;
     text-align: right;
@@ -282,7 +295,7 @@ p {
     width: 300px;
     height: 200px;
     background-color: grey;
-    margin-top: 90px;
+    margin-top: 30px;
 }
 
 input[type=text],
@@ -334,7 +347,7 @@ input[type=submit]:hover {
     margin: 10px;
 }
 
-.description-block img[src*="n1"] {
+.description-block .preview {
     float: left;
     margin: 0 10px 10px 0;
     border: 2px solid rgba(255, 0, 0, 0.51);
@@ -343,8 +356,34 @@ input[type=submit]:hover {
     height: 140px;
 }
 
-.description-block img[src*="n1"]:hover {
+.description-block .preview:hover {
     border: 2px solid transparent;
+}
+
+.description-block .button-buy {
+    display: block;
+    float: left;
+    clear: left;
+    width: 190px;
+    height: 30px;
+    outline: none;
+    background: #121210;
+    border: 2px solid #121210;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    transition: background .7s, color .7s;
+}
+
+.description-block .button-buy:hover {
+    background: #fff;
+    color: black;
+}
+
+.description-block .button-buy:active {
+    background: #fff;
+    color: black;
+    margin-top: 2px;
 }
 
 .description-block .long-desc {
@@ -383,7 +422,11 @@ input[type=submit]:hover {
     }
 }
 
-@media screen and (max-width: 815px) {
+@media screen and (max-width: 830px) {
+
+    .layout-header {
+        margin: 0 auto;
+    }
     .layout-body-column1 {
         width: 426px;
         float: none;
